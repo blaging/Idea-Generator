@@ -1,0 +1,51 @@
+<!--
+    Jordan Wheeler
+    1/17/22
+    ideaGenerator.html
+    Idea Generator HTML. Click the button and a random
+    adjective, color, and noun will be shown.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Idea Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--Default theme-->
+<body class="theme-gbGray">
+
+    <!--Scan lines overlay-->
+    <div class="scanLines"></div>
+
+    <div class="main">
+        <h1>Idea Generator</h1>
+        <p>Click "New Idea" to generate a random adjective, color and noun.</p>
+        <!--The three randomly generated ideas-->
+        <section id="ideas">
+            <div id="adjective">Fuzzy</div>
+            <div id="color">Purple</div>
+            <div id="noun">Building</div>
+        </section>
+
+        <button type="button" onclick="randomText()">New Idea</button>
+
+        <!--Select theme-->
+        <select id="theme-selector">
+            <option selected disabled>Choose Theme</option>
+            <option value="theme-gbGray">GameBoy Gray</option>
+            <option value="theme-gbGreen">GameBoy Green</option>
+            <option value="theme-virtualBoyRed">VirtualBoy Red</option>
+        </select>
+    </div>
+
+
+
+    <!--</div>-->
+
+    <script src="ideaGenerator.js"></script>
+
+</body>
+</html>
